@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #8785A2;
+}
+
+/* nav bar */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    background-color: #FFC7C7;
+    align-items: center;
+    height: 4.5rem;
+    margin-top: 0;
+    width: 100vw;
+}
+
+.logo{
+    margin-left: 2rem;
+    font-family: 'Righteous', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.logolink{
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.navelement{
+    position: relative;
+    margin-right: 2rem;
+    display: flex;
+    gap:2.5rem;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    font-size: 1.4rem;
+    
+}
+
+.nav-el-btn{
+    text-decoration: none;
+    color:  #364F6B;
+    
+}
+
+.nav-el-btn:hover{
+    text-decoration: none;
+    color:  #000000;
+}
+
+
+/* nav bar element > option > drop down */
+.option{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    position: relative;
+    width: 2.5rem;
+    top:-0.75rem;
+    left: -2.4rem;
+}
+
+.option_btn{
+
+    width: 3.5rem;
+    color: #364F6B;
+}
+
+.option_btn:hover{
+
+    width: 3.5rem;
+    color: #000000;
+}
+
+.option_content{
+    position: absolute;
+    display: grid;
+    margin-top: 0.1rem;
+    background-color: black;
+    width: 9rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+    
+}
+
+.option:hover .option_content{
+    display: grid;
+}
+
+.opt_cnt_text{
+    color: white;
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.opt_cnt_text:hover{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.abouttext{
+background-color: #8785A2;
+height: 100vh;
+width: 100vw;
+}
+
+.abouttext{
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 830px){
+
+    /*nav*/
+   .navelement {
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 1000px){
+
+   .abouttext{
+    font-size: 1.5rem;
+   }
+}
+
+@media only screen and (max-width: 760px){
+
+    .abouttext{
+     font-size: 1.2rem;
+     margin-left: 0.3rem;
+    }
+ }

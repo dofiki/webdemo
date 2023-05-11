@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+}
+
+body{
+background-color: black;
+}
+
+/* nav bar */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    background-color: #FFC7C7;
+    align-items: center;
+    height: 4.5rem;
+    margin-top: 0;
+    width: 100vw;
+}
+
+.logo{
+    margin-left: 2rem;
+    font-family: 'Righteous', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.logolink{
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.navelement{
+    position: relative;
+    margin-right: 2rem;
+    display: flex;
+    gap:2.5rem;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    font-size: 1.4rem;
+    
+}
+
+.nav-el-btn{
+    text-decoration: none;
+    color:  #364F6B;
+    
+}
+
+.nav-el-btn:hover{
+    text-decoration: none;
+    color:  #000000;
+}
+
+
+/* nav bar element > option > drop down */
+.option{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    position: relative;
+    width: 2.5rem;
+    top:-0.75rem;
+    left: -2.4rem;
+}
+
+.option_btn{
+
+    width: 3.5rem;
+    color: #364F6B;
+}
+
+.option_btn:hover{
+
+    width: 3.5rem;
+    color: #000000;
+}
+
+.option_content{
+    position: absolute;
+    display: grid;
+    margin-top: 0.1rem;
+    background-color: black;
+    width: 9rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+    
+}
+
+.option:hover .option_content{
+    display: grid;
+}
+
+.opt_cnt_text{
+    color: white;
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.opt_cnt_text:hover{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+/* content */
+
+.content{
+    height: 50vh;
+    width: 100vw;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentboxone{
+    height: 14rem;
+    width: 22rem;
+    background-color: #FFE2E2;
+    text-align: center;
+    border:#364F6B dotted 5px;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    
+}
+
+.contentboxone:hover{
+    background-color: #FFC7C7;
+}
+
+.contentboxtwo{
+    height: 14rem;
+    width: 22rem;
+    background-color: #FFE2E2;
+    text-align: center;
+    border:#364F6B dotted 5px;
+    border-radius: 5rem;
+    
+}
+
+.contentboxtwo:hover{
+    background-color: #FFC7C7;
+}
+
+.contentboxthree{
+    height: 14rem;
+    width: 22rem;
+    background-color: #FFE2E2;
+    text-align: center;
+    border:#364F6B dotted 5px;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+
+.contentboxthree:hover{
+    background-color: #FFC7C7;
+}
+
+/* section one */
+
+.sectionone{
+    height: 80vh;
+    width: 100vw;
+    background-color: #8785A2;
+}
+
+/* section two */
+
+.sectiontwo{
+    height: 80vh;
+    width: 100vw;
+    background-color: #364F6B;
+}
+
+/* footer */
+
+.footer{
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    
+}
+
+.fcontent{
+    display: flex;
+    gap: 5rem;
+    font-size: 1.4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+   
+}
+
+.fone, .ftwo, .fthree, .ffour{
+ margin-top:1rem;
+ 
+}
+
+.fcopy{
+    margin-left:8rem;
+    font-size: 0.9rem;
+    color: gray;
+    font-family: 'Righteous', cursive;
+}
+
+.ftex{
+    text-decoration: none;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.ftex:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (max-width: 1160px){
+
+     /*content*/
+.contentboxone, .contentboxtwo, .contentboxthree{
+    height: 10rem;
+    width: 18rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+}
+
+@media only screen and (max-width: 830px){
+
+    /*nav*/
+   .navelement {
+    display: none;
+   }
+
+   /*content*/
+   .content{
+    display: grid;
+    height: 100vh;
+   }
+
+   .contentboxone, .contentboxtwo, .contentboxthree{
+    margin-top: 1rem;
+    width: 30rem;
+   }
+
+   /*footer*/
+
+   .fcontent{
+    display: flex;
+    gap: 5rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+   
+}
+
+.fcopy{
+    margin-left: 2rem;
+    font-size: 0.8rem;
+}
+
+}
+
+@Media only screen and (max-width: 637px){
+    .fcontent{
+        display: flex;
+        gap: 2rem;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+       
+    }
+
+    .fcopy{
+        margin-left: 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 520px){
+
+    /*content*/
+
+    .content{
+        display: grid;
+        height: 100vh;
+       }
+
+    .contentboxone, .contentboxtwo, .contentboxthree{
+        margin-top: 1rem;
+        width: 20rem;
+       }
+}
+
+@media only screen and (max-width: 417px) {
+    .fcontent{
+        display: flex;
+        gap: 1rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+       
+    }
+    
+}
